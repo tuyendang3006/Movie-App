@@ -50,7 +50,7 @@ NodeJS
 1. download this program 
 2. "npm install" inside the root directory
 3. "npm install" inside the client directory 
-4. run server(backend): "nodemode index.js"
+4. run server(backend): "nodemon index.js"
 5. run client(frontend): "npm start"
 6. run app: "npm run dev"
 
