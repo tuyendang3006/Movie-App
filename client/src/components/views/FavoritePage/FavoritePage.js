@@ -21,7 +21,7 @@ function FavoritePage() {
                 if (response.data.success) {
                     setFavorites(response.data.favorites)
                 } else {
-                    alert('영화 정보를 가져오는데 실패 했습니다.')
+                    alert('Failed to get Favorite Movie.')
                 }
             })
     }
@@ -40,7 +40,7 @@ function FavoritePage() {
                 if (response.data.success) {
                     fetchFavoredMovie()
                 } else {
-                    alert("리스트에서 지우는데 실패했습니다.")
+                    alert("Failed to remove from Favorite Movies.")
                 }
             })
 

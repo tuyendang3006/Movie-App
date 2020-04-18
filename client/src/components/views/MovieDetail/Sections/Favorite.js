@@ -30,7 +30,7 @@ function Favorite(props) {
                 setFavoriteNumber(response.data.favoriteNumber)
                 if (response.data.success) {
                 } else {
-                    alert('숫자 정보를 가져오는데 실패 했습니다.')
+                    alert('Failed to get Favorite Number.')
                 }
             })
 
@@ -40,7 +40,7 @@ function Favorite(props) {
                 if (response.data.success) {
                     setFavorited(response.data.favorited)
                 } else {
-                    alert('정보를 가져오는데 실패 했습니다.')
+                    alert('Failed to get Favorite Information.')
                 }
             })
 
@@ -58,7 +58,7 @@ function Favorite(props) {
                         setFavoriteNumber(FavoriteNumber - 1)
                         setFavorited(!Favorited)
                     } else {
-                        alert('Favorite 리스트에서 지우는 걸 실패했습니다.')
+                        alert('Failed to Remove From Favorite.')
                     }
                 })
 
@@ -71,7 +71,7 @@ function Favorite(props) {
                         setFavorited(!Favorited)
 
                     } else {
-                        alert('Favorite 리스트에서 추가하는 걸 실패했습니다.')
+                        alert('Failed to Add To Favorite.')
                     }
                 })
         }

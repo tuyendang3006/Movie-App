@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import CenterMenu from './Sections/CenterMenu';
 import LeftMenu from './Sections/LeftMenu';
 import RightMenu from './Sections/RightMenu';
 import { Drawer, Button, Icon } from 'antd';
@@ -18,13 +19,14 @@ function NavBar() {
   return (
     <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%' }}>
       <div className="menu__logo">
-        <a href="/">Logo</a>
+        <a href="/">Movie</a>
       </div>
       <div className="menu__container">
         <div className="menu_left">
           <LeftMenu mode="horizontal" />
         </div>
-        <div className="menu_rigth">
+      
+        <div className="menu_right">
           <RightMenu mode="horizontal" />
         </div>
         <Button
@@ -43,6 +45,7 @@ function NavBar() {
           visible={visible}
         >
           <LeftMenu mode="inline" />
+         
           <RightMenu mode="inline" />
         </Drawer>
       </div>
