@@ -8,9 +8,10 @@ const { auth } = require("../middleware/auth");
 //=================================
 
 router.post("/saveComment", auth, (req, res) => {
-
+    // Instantiate instance of model
     const comment = new Comment(req.body)
 
+    // Save instance of Comment Models to MongoDB
     comment.save((err, comment) => {
         console.log(err)
         if (err) return res.json({ success: false, err })
@@ -25,7 +26,7 @@ router.post("/saveComment", auth, (req, res) => {
 })
 
 router.post("/getComments", (req, res) => {
-
+    // Get instance of Comment Models from MongoDB
     Comment.find({ "postId": req.body.movieId })
         .populate('writer')
         .exec((err, comments) => {

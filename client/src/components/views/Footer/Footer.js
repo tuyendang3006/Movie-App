@@ -8,7 +8,7 @@ function Footer() {
             flexDirection: 'column', alignItems: 'center',
             justifyContent: 'center', fontSize:'1rem'
         }}>
-           <p>  <Icon type="heart" /> Movie App  <Icon type="heart" /></p>
+           <p>  <Icon type="heart" style={{ color: '#08c' }} /> Love Movie <Icon type="heart" style={{ color: '#08c' }}  /></p>
         </div>
     )
 }

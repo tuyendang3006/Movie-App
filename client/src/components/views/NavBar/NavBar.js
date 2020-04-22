@@ -4,6 +4,7 @@ import LeftMenu from './Sections/LeftMenu';
 import RightMenu from './Sections/RightMenu';
 import { Drawer, Button, Icon } from 'antd';
 import './Sections/Navbar.css';
+//import Logo from '../../../assets/images/Logo.png'
 
 function NavBar() {
   const [visible, setVisible] = useState(false)
@@ -19,13 +20,15 @@ function NavBar() {
   return (
     <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%' }}>
       <div className="menu__logo">
-        <a href="/">Movie</a>
+  <a href="/">Movie</a>
       </div>
       <div className="menu__container">
         <div className="menu_left">
           <LeftMenu mode="horizontal" />
         </div>
-      
+        {/* <div className="menu_center">
+          <CenterMenu mode="horizontal" />
+        </div> */}
         <div className="menu_right">
           <RightMenu mode="horizontal" />
         </div>
@@ -45,7 +48,7 @@ function NavBar() {
           visible={visible}
         >
           <LeftMenu mode="inline" />
-         
+          {/* <CenterMenu mode="inline" /> */}
           <RightMenu mode="inline" />
         </Drawer>
       </div>

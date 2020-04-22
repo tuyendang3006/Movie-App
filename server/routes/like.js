@@ -6,7 +6,7 @@ const { Dislike } = require("../models/Dislike");
 const { auth } = require("../middleware/auth");
 
 //=================================
-//             Likes DisLikes
+//          Likes DisLikes
 //=================================
 
 router.post("/getLikes", (req, res) => {
@@ -109,7 +109,6 @@ router.post("/unDisLike", (req, res) => {
 })
 
 
-
 router.post("/upDisLike", (req, res) => {
 
     let variable = {}
@@ -120,7 +119,7 @@ router.post("/upDisLike", (req, res) => {
     }
 
     const disLike = new Dislike(variable)
-    //save the like information data in MongoDB
+    //save the dislike information data in MongoDB
     disLike.save((err, dislikeResult) => {
         if (err) return res.json({ success: false, err });
         //In case Like Button is already clicked, we need to decrease the like by 1 
@@ -133,16 +132,6 @@ router.post("/upDisLike", (req, res) => {
 
 
 })
-
-
-
-
-
-
-
-
-
-
 
 
 
