@@ -34,7 +34,6 @@ Log out
 
 ###
 MongoDB
-
 To get URI: https://www.mongodb.com/cloud
 
 ###
@@ -42,24 +41,7 @@ ExpressJS
 
 ###
 React
-
 To get API key of movie: https://www.themoviedb.org 
-
-Libraries:
-- antd
-- axios
-- formik
-- moment
-- react
-- react-dom
-- react-icon
-- react-redux
-- react-router-dom
-- react-scripts
-- redux
-- redux-promise
-- redux-thunk
-- yup
 
 ###
 NodeJS
@@ -70,9 +52,13 @@ NodeJS
 1. download this program or clone the repository"git clone https://github.com/tuyendang3006/Movie-App.git"
 2. "npm install" inside the root directory
 3. "npm install" inside the client directory 
-4. run server(backend): "nodemon index.js"
-5. run client(frontend): "npm start"
-6. run app: "npm run dev"
+4. add a file "dev.js" in repository "config" of "server" by export mongo_URI
+5. run server(backend): "nodemon index.js" or "nodemon server/index.js" 
+6. run client(frontend): "npm start" 
+7. run app: "npm run dev" 
 
+### Preview the application
 
+##
+Deploy on Heroku: https://calm-cove-78457.herokuapp.com/
 
